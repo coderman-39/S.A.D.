@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:id="@+id/textViewQuestion"
+            android:text="Question will appear here"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+            
+        <RadioGroup
+            android:id="@+id/radioGroupOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                
+            <RadioButton
+                android:id="@+id/radioOption1"
+                android:text="Option 1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+                    
+            <RadioButton
+                android:id="@+id/radioOption2"
+                android:text="Option 2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+                    
+            <RadioButton
+                android:id="@+id/radioOption3"
+                android:text="Option 3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+                    
+            <RadioButton
+                android:id="@+id/radioOption4"
+                android:text="Option 4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+        
+        <!-- Navigation Buttons -->
+        <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_marginTop="24dp">
+           
+            <Button
+                android:id="@+id/buttonBack"
+                android:text="Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+                
+            <View
+                android:layout_width="16dp"
+                android:layout_height="wrap_content" />
+            
+            <Button
+                android:id="@+id/buttonNext"
+                android:text="Next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+       </LinearLayout>
+    </LinearLayout>
+</ScrollView>
